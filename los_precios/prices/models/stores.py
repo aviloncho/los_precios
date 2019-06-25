@@ -1,0 +1,20 @@
+# Django
+from django.db import models
+from django.utils.translation import ugettext_lazy as _
+
+# Utils
+from los_precios.utils.models import BaseModel
+
+
+class Store(BaseModel):
+    """
+    Store class to create Stores.
+    """
+
+    name = models.CharField(
+        max_length=100,
+        verbose_name=_('name')
+    )
+
+    def __str__(self):
+        return self.name
