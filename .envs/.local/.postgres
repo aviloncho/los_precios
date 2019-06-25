@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=los_precios
+POSTGRES_USER=ZirqDVRswRIBGkhzvWWQFbQxQZuEuFAj
+POSTGRES_PASSWORD=yJ4cJkEuElAtW1y1C8DGXklyzAsrzsPCA0TSXTGOYv1udNk7Fz5c4ug7upuUzasM

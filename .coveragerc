@@ -1,0 +1,5 @@
+[run]
+include = los_precios/*
+omit = *migrations*, *tests*
+plugins =
+    django_coverage_plugin
