@@ -1,6 +1,6 @@
 [
     {
-      "model": "items.Measure",
+      "model": "products.Measure",
       "pk": 1,
       "fields": {
         "name": "Litro",
@@ -10,7 +10,7 @@
       }
     },
     {
-      "model": "items.Measure",
+      "model": "products.Measure",
       "pk": 2,
       "fields": {
         "name": "Mililitro",
@@ -20,7 +20,7 @@
       }
     },
     {
-      "model": "items.Measure",
+      "model": "products.Measure",
       "pk": 3,
       "fields": {
         "name": "Gramo",
@@ -30,7 +30,7 @@
       }
     },
     {
-      "model": "items.Measure",
+      "model": "products.Measure",
       "pk": 4,
       "fields": {
         "name": "Kilogramo",
@@ -40,7 +40,7 @@
       }
     },
     {
-      "model": "items.Measure",
+      "model": "products.Measure",
       "pk": 5,
       "fields": {
         "name": "Unidad",

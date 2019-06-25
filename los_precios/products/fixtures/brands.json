@@ -1,6 +1,6 @@
 [
     {
-      "model": "items.Brand",
+      "model": "products.Brand",
       "pk": 1,
       "fields": {
         "name": "Viandé",
@@ -9,7 +9,7 @@
       }
     },
     {
-      "model": "items.Brand",
+      "model": "products.Brand",
       "pk": 2,
       "fields": {
         "name": "Latti",
@@ -18,7 +18,7 @@
       }
     },
     {
-      "model": "items.Brand",
+      "model": "products.Brand",
       "pk": 3,
       "fields": {
         "name": "Nestum",
@@ -27,7 +27,7 @@
       }
     },
     {
-      "model": "items.Brand",
+      "model": "products.Brand",
       "pk": 4,
       "fields": {
         "name": "Little Angels",
@@ -36,7 +36,7 @@
       }
     },
     {
-      "model": "items.Brand",
+      "model": "products.Brand",
       "pk": 5,
       "fields": {
         "name": "Natural Feelings",
@@ -45,7 +45,7 @@
       }
     },
     {
-      "model": "items.Brand",
+      "model": "products.Brand",
       "pk": 6,
       "fields": {
         "name": "Kythos",
@@ -54,7 +54,7 @@
       }
     },
     {
-      "model": "items.Brand",
+      "model": "products.Brand",
       "pk": 7,
       "fields": {
         "name": "Crokan",
@@ -63,7 +63,7 @@
       }
     },
     {
-      "model": "items.Brand",
+      "model": "products.Brand",
       "pk": 8,
       "fields": {
         "name": "Zev",
@@ -72,7 +72,7 @@
       }
     },
     {
-      "model": "items.Brand",
+      "model": "products.Brand",
       "pk": 9,
       "fields": {
         "name": "Coca Cola",
@@ -81,7 +81,7 @@
       }
     },
     {
-      "model": "items.Brand",
+      "model": "products.Brand",
       "pk": 10,
       "fields": {
         "name": "Doritos",
@@ -90,7 +90,7 @@
       }
     },
     {
-      "model": "items.Brand",
+      "model": "products.Brand",
       "pk": 11,
       "fields": {
         "name": "Pony Malta",
@@ -99,7 +99,7 @@
       }
     },
     {
-      "model": "items.Brand",
+      "model": "products.Brand",
       "pk": 12,
       "fields": {
         "name": "Tosh",
@@ -108,7 +108,7 @@
       }
     },
     {
-      "model": "items.Brand",
+      "model": "products.Brand",
       "pk": 13,
       "fields": {
         "name": "Don Maiz",
@@ -117,7 +117,7 @@
       }
     },
     {
-      "model": "items.Brand",
+      "model": "products.Brand",
       "pk": 14,
       "fields": {
         "name": "Alqueria",
@@ -126,7 +126,7 @@
       }
     },
     {
-      "model": "items.Brand",
+      "model": "products.Brand",
       "pk": 15,
       "fields": {
         "name": "Andina",
@@ -135,7 +135,7 @@
       }
     },
     {
-      "model": "items.Brand",
+      "model": "products.Brand",
       "pk": 16,
       "fields": {
         "name": "Chocolisto",
@@ -144,7 +144,7 @@
       }
     },
     {
-      "model": "items.Brand",
+      "model": "products.Brand",
       "pk": 17,
       "fields": {
         "name": "Bimbo",
@@ -153,7 +153,7 @@
       }
     },
     {
-      "model": "items.Brand",
+      "model": "products.Brand",
       "pk": 18,
       "fields": {
         "name": "Alpina",
@@ -162,7 +162,7 @@
       }
     },
     {
-      "model": "items.Brand",
+      "model": "products.Brand",
       "pk": 19,
       "fields": {
         "name": "Kola Roman",
@@ -171,7 +171,7 @@
       }
     },
     {
-      "model": "items.Brand",
+      "model": "products.Brand",
       "pk": 20,
       "fields": {
         "name": "Ranchera",
@@ -180,7 +180,7 @@
       }
     },
     {
-      "model": "items.Brand",
+      "model": "products.Brand",
       "pk": 21,
       "fields": {
         "name": "Mr Tea",
@@ -189,7 +189,7 @@
       }
     },
     {
-      "model": "items.Brand",
+      "model": "products.Brand",
       "pk": 22,
       "fields": {
         "name": "Pietran",
@@ -198,7 +198,7 @@
       }
     },
     {
-      "model": "items.Brand",
+      "model": "products.Brand",
       "pk": 23,
       "fields": {
         "name": "Omi",
@@ -207,7 +207,7 @@
       }
     },
     {
-      "model": "items.Brand",
+      "model": "products.Brand",
       "pk": 24,
       "fields": {
         "name": "Tree Fruts",
