@@ -1,0 +1,29 @@
+[
+    {
+      "model": "prices.Store",
+      "pk": 1,
+      "fields": {
+        "name": "D1",
+        "created": "2019-06-24 00:00",
+        "modified": "2019-06-24 00:00"
+      }
+    },
+    {
+      "model": "prices.Store",
+      "pk": 2,
+      "fields": {
+        "name": "Olimpica",
+        "created": "2019-06-24 00:00",
+        "modified": "2019-06-24 00:00"
+      }
+    },
+    {
+      "model": "prices.Store",
+      "pk": 3,
+      "fields": {
+        "name": "Alkosto",
+        "created": "2019-06-24 00:00",
+        "modified": "2019-06-24 00:00"
+      }
+    }
+]
