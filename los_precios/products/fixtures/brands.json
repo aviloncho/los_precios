@@ -1,0 +1,218 @@
+[
+    {
+      "model": "items.Brand",
+      "pk": 1,
+      "fields": {
+        "name": "Viandé",
+        "created": "2019-06-24 00:00",
+        "modified": "2019-06-24 00:00"
+      }
+    },
+    {
+      "model": "items.Brand",
+      "pk": 2,
+      "fields": {
+        "name": "Latti",
+        "created": "2019-06-24 00:00",
+        "modified": "2019-06-24 00:00"
+      }
+    },
+    {
+      "model": "items.Brand",
+      "pk": 3,
+      "fields": {
+        "name": "Nestum",
+        "created": "2019-06-24 00:00",
+        "modified": "2019-06-24 00:00"
+      }
+    },
+    {
+      "model": "items.Brand",
+      "pk": 4,
+      "fields": {
+        "name": "Little Angels",
+        "created": "2019-06-24 00:00",
+        "modified": "2019-06-24 00:00"
+      }
+    },
+    {
+      "model": "items.Brand",
+      "pk": 5,
+      "fields": {
+        "name": "Natural Feelings",
+        "created": "2019-06-24 00:00",
+        "modified": "2019-06-24 00:00"
+      }
+    },
+    {
+      "model": "items.Brand",
+      "pk": 6,
+      "fields": {
+        "name": "Kythos",
+        "created": "2019-06-24 00:00",
+        "modified": "2019-06-24 00:00"
+      }
+    },
+    {
+      "model": "items.Brand",
+      "pk": 7,
+      "fields": {
+        "name": "Crokan",
+        "created": "2019-06-24 00:00",
+        "modified": "2019-06-24 00:00"
+      }
+    },
+    {
+      "model": "items.Brand",
+      "pk": 8,
+      "fields": {
+        "name": "Zev",
+        "created": "2019-06-24 00:00",
+        "modified": "2019-06-24 00:00"
+      }
+    },
+    {
+      "model": "items.Brand",
+      "pk": 9,
+      "fields": {
+        "name": "Coca Cola",
+        "created": "2019-06-24 00:00",
+        "modified": "2019-06-24 00:00"
+      }
+    },
+    {
+      "model": "items.Brand",
+      "pk": 10,
+      "fields": {
+        "name": "Doritos",
+        "created": "2019-06-24 00:00",
+        "modified": "2019-06-24 00:00"
+      }
+    },
+    {
+      "model": "items.Brand",
+      "pk": 11,
+      "fields": {
+        "name": "Pony Malta",
+        "created": "2019-06-24 00:00",
+        "modified": "2019-06-24 00:00"
+      }
+    },
+    {
+      "model": "items.Brand",
+      "pk": 12,
+      "fields": {
+        "name": "Tosh",
+        "created": "2019-06-24 00:00",
+        "modified": "2019-06-24 00:00"
+      }
+    },
+    {
+      "model": "items.Brand",
+      "pk": 13,
+      "fields": {
+        "name": "Don Maiz",
+        "created": "2019-06-24 00:00",
+        "modified": "2019-06-24 00:00"
+      }
+    },
+    {
+      "model": "items.Brand",
+      "pk": 14,
+      "fields": {
+        "name": "Alqueria",
+        "created": "2019-06-24 00:00",
+        "modified": "2019-06-24 00:00"
+      }
+    },
+    {
+      "model": "items.Brand",
+      "pk": 15,
+      "fields": {
+        "name": "Andina",
+        "created": "2019-06-24 00:00",
+        "modified": "2019-06-24 00:00"
+      }
+    },
+    {
+      "model": "items.Brand",
+      "pk": 16,
+      "fields": {
+        "name": "Chocolisto",
+        "created": "2019-06-24 00:00",
+        "modified": "2019-06-24 00:00"
+      }
+    },
+    {
+      "model": "items.Brand",
+      "pk": 17,
+      "fields": {
+        "name": "Bimbo",
+        "created": "2019-06-24 00:00",
+        "modified": "2019-06-24 00:00"
+      }
+    },
+    {
+      "model": "items.Brand",
+      "pk": 18,
+      "fields": {
+        "name": "Alpina",
+        "created": "2019-06-24 00:00",
+        "modified": "2019-06-24 00:00"
+      }
+    },
+    {
+      "model": "items.Brand",
+      "pk": 19,
+      "fields": {
+        "name": "Kola Roman",
+        "created": "2019-06-24 00:00",
+        "modified": "2019-06-24 00:00"
+      }
+    },
+    {
+      "model": "items.Brand",
+      "pk": 20,
+      "fields": {
+        "name": "Ranchera",
+        "created": "2019-06-24 00:00",
+        "modified": "2019-06-24 00:00"
+      }
+    },
+    {
+      "model": "items.Brand",
+      "pk": 21,
+      "fields": {
+        "name": "Mr Tea",
+        "created": "2019-06-24 00:00",
+        "modified": "2019-06-24 00:00"
+      }
+    },
+    {
+      "model": "items.Brand",
+      "pk": 22,
+      "fields": {
+        "name": "Pietran",
+        "created": "2019-06-24 00:00",
+        "modified": "2019-06-24 00:00"
+      }
+    },
+    {
+      "model": "items.Brand",
+      "pk": 23,
+      "fields": {
+        "name": "Omi",
+        "created": "2019-06-24 00:00",
+        "modified": "2019-06-24 00:00"
+      }
+    },
+    {
+      "model": "items.Brand",
+      "pk": 24,
+      "fields": {
+        "name": "Tree Fruts",
+        "created": "2019-06-24 00:00",
+        "modified": "2019-06-24 00:00"
+      }
+    }
+]

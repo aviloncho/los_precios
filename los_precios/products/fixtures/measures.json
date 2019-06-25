@@ -1,0 +1,52 @@
+[
+    {
+      "model": "items.Measure",
+      "pk": 1,
+      "fields": {
+        "name": "Litro",
+        "abrev": "l",
+        "created": "2019-06-24 00:00",
+        "modified": "2019-06-24 00:00"
+      }
+    },
+    {
+      "model": "items.Measure",
+      "pk": 2,
+      "fields": {
+        "name": "Mililitro",
+        "abrev": "ml",
+        "created": "2019-06-24 00:00",
+        "modified": "2019-06-24 00:00"
+      }
+    },
+    {
+      "model": "items.Measure",
+      "pk": 3,
+      "fields": {
+        "name": "Gramo",
+        "abrev": "g",
+        "created": "2019-06-24 00:00",
+        "modified": "2019-06-24 00:00"
+      }
+    },
+    {
+      "model": "items.Measure",
+      "pk": 4,
+      "fields": {
+        "name": "Kilogramo",
+        "abrev": "kg",
+        "created": "2019-06-24 00:00",
+        "modified": "2019-06-24 00:00"
+      }
+    },
+    {
+      "model": "items.Measure",
+      "pk": 5,
+      "fields": {
+        "name": "Unidad",
+        "abrev": "und",
+        "created": "2019-06-24 00:00",
+        "modified": "2019-06-24 00:00"
+      }
+    }
+]

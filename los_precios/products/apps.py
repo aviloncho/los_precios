@@ -8,5 +8,5 @@ from django.utils.translation import gettext_lazy as _
 class ProductsConfig(AppConfig):
     """Products App config"""
     
-    name = "precios.products"
+    name = "los_precios.products"
     verbose_name = _("Products")
