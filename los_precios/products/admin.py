@@ -4,9 +4,12 @@ from django.contrib import admin
 # Models
 from los_precios.products.models import Brand, Measure, Item
 
+# AdminInline
+from los_precios.prices.admin import ItemPriceInLine
+
 @admin.register(Brand)
 class BrandAdmin(admin.ModelAdmin):
-    """Country Admin"""
+    """Brand Admin"""
     list_display = ('name',)
     list_display_links = ('name',)
     ordering = ('name',)
@@ -15,7 +18,7 @@ class BrandAdmin(admin.ModelAdmin):
 
 @admin.register(Measure)
 class MeasureAdmin(admin.ModelAdmin):
-    """Country Admin"""
+    """Measure Admin"""
     list_display = ('name', 'abrev',)
     list_display_links = ('name',)
     ordering = ('name',)
@@ -24,7 +27,7 @@ class MeasureAdmin(admin.ModelAdmin):
 
 @admin.register(Item)
 class ItemAdmin(admin.ModelAdmin):
-    """Country Admin"""
+    """Item Admin"""
     list_display = (
         'barcode',
         'name',
@@ -36,3 +39,5 @@ class ItemAdmin(admin.ModelAdmin):
     list_display_links = ('name',)
     ordering = ('name',)
     search_fields = ('name', 'brand')
+
+    inlines = [ItemPriceInLine,]

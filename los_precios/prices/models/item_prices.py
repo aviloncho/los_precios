@@ -34,4 +34,4 @@ class ItemPrice(BaseModel):
     )
 
     def __str__(self):
-        return self.name
+        return '{}({}): {}'.format(self.item.name, self.store.name, self.price)
