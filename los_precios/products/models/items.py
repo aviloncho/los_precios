@@ -63,12 +63,10 @@ class Item(BaseModel):
         null=True,
     )
 
-    pack_unit_item = models.ForeignKey(
+    pack_unit_items = models.ManyToManyField(
         'self',
         verbose_name=_('pack unit barcode'),
-        on_delete=models.PROTECT,
         blank=True,
-        null=True,
     )
 
     lp_id = models.IntegerField(

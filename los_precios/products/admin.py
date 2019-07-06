@@ -4,6 +4,9 @@ from django.contrib import admin
 # Models
 from los_precios.products.models import Brand, Measure, Item
 
+# Forms
+from los_precios.products.forms.items import ItemForm
+
 # AdminInline
 from los_precios.prices.admin import ItemPriceInLine
 
@@ -28,6 +31,7 @@ class MeasureAdmin(admin.ModelAdmin):
 @admin.register(Item)
 class ItemAdmin(admin.ModelAdmin):
     """Item Admin"""
+    form = ItemForm
     list_display = (
         'barcode',
         'name',
@@ -40,5 +44,6 @@ class ItemAdmin(admin.ModelAdmin):
     list_display_links = ('name',)
     ordering = ('name',)
     search_fields = ('name', 'brand')
+    filter_horizontal = ('pack_unit_items',)
 
     inlines = [ItemPriceInLine,]
