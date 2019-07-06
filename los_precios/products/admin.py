@@ -32,9 +32,10 @@ class ItemAdmin(admin.ModelAdmin):
         'barcode',
         'name',
         'brand',
+        'quantity',
+        'measure',
         'is_pack',
         'lp_id',
-        'quantity',
     )
     list_display_links = ('name',)
     ordering = ('name',)
