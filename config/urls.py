@@ -15,7 +15,7 @@ urlpatterns = [
     # User management
     path("users/", include("los_precios.users.urls", namespace="users")),
     path("accounts/", include("allauth.urls")),
-    # Your stuff: custom urls includes go here
+    path("products/", include("los_precios.products.urls", namespace="products")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 if settings.DEBUG:
