@@ -78,9 +78,9 @@ AWS_DEFAULT_ACL = None
 AWS_S3_REGION_NAME = env("DJANGO_AWS_S3_REGION_NAME", default=None)
 # STATIC
 # ------------------------
-CLOUD_CUBE_DIR = env("DJANGO_CLOUD_CUBE_DIR", default="/")
+CLOUD_CUBE_STATIC_DIR = env("DJANGO_CLOUD_CUBE_STATIC_DIR", default="static")
 STATICFILES_STORAGE = "config.settings.production.StaticRootS3Boto3Storage"
-STATIC_URL = f"https://{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com{CLOUD_CUBE_DIR}static/"
+STATIC_URL = f"https://{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com/{CLOUD_CUBE_STATIC_DIR}/"
 # MEDIA
 # ------------------------------------------------------------------------------
 # region http://stackoverflow.com/questions/10390244/
@@ -99,8 +99,9 @@ class MediaRootS3Boto3Storage(S3Boto3Storage):
 
 
 # endregion
+CLOUD_CUBE_MEDIA_DIR = env("DJANGO_CLOUD_CUBE_STATIC_DIR", default="media")
 DEFAULT_FILE_STORAGE = "config.settings.production.MediaRootS3Boto3Storage"
-MEDIA_URL = f"https://{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com{CLOUD_CUBE_DIR}media/"
+MEDIA_URL = f"https://{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com/{CLOUD_CUBE_MEDIA_DIR}/"
 
 # TEMPLATES
 # ------------------------------------------------------------------------------
