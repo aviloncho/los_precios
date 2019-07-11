@@ -99,7 +99,7 @@ class MediaRootS3Boto3Storage(S3Boto3Storage):
 
 
 # endregion
-CLOUD_CUBE_MEDIA_DIR = env("DJANGO_CLOUD_CUBE_STATIC_DIR", default="media")
+CLOUD_CUBE_MEDIA_DIR = env("DJANGO_CLOUD_CUBE_MEDIA_DIR", default="media")
 DEFAULT_FILE_STORAGE = "config.settings.production.MediaRootS3Boto3Storage"
 MEDIA_URL = f"https://{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com/{CLOUD_CUBE_MEDIA_DIR}/"
 
