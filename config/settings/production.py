@@ -89,7 +89,7 @@ from storages.backends.s3boto3 import S3Boto3Storage  # noqa E402
 
 
 class StaticRootS3Boto3Storage(S3Boto3Storage):
-    location = "public/static"
+    location = CLOUD_CUBE_STATIC_DIR
     # default_acl = "public-read"
 
 
