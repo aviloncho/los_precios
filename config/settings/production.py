@@ -90,7 +90,7 @@ from storages.backends.s3boto3 import S3Boto3Storage  # noqa E402
 
 class StaticRootS3Boto3Storage(S3Boto3Storage):
     location = "public/static"
-    default_acl = "public-read"
+    # default_acl = "public-read"
 
 
 class MediaRootS3Boto3Storage(S3Boto3Storage):
