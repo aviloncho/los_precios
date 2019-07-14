@@ -3,6 +3,9 @@
 # Django REST Framework
 from rest_framework import mixins, viewsets
 
+# Permissions
+from rest_framework.permissions import IsAuthenticated
+
 # Filters
 from rest_framework.filters import SearchFilter, OrderingFilter
 from django_filters.rest_framework import DjangoFilterBackend
@@ -32,3 +35,8 @@ class ItemViewSet(mixins.ListModelMixin,
         'is_pack',
         'lp_id',
     )
+
+    def get_permissions(self):
+        permissions = [IsAuthenticated]
+
+        return [permission() for permission in permissions]
