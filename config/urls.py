@@ -6,6 +6,7 @@ from django.views.generic import TemplateView
 from django.views import defaults as default_views
 
 from los_precios.users.views import FacebookLogin
+from los_precios.users.views import GoogleLogin
 
 urlpatterns = [
     path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
@@ -20,6 +21,7 @@ urlpatterns = [
     path("rest-auth/", include("rest_auth.urls")),
     path("rest-auth/registration/", include("rest_auth.registration.urls")),
     path("rest-auth/facebook/", FacebookLogin.as_view(), name="fb_login"),
+    path("rest-auth/google/", GoogleLogin.as_view(), name="go_login"),
     path("products/", include("los_precios.products.urls", namespace="products")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
