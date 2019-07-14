@@ -11,7 +11,7 @@ from rest_framework.filters import SearchFilter, OrderingFilter
 from django_filters.rest_framework import DjangoFilterBackend
 
 # Serializers
-from los_precios.products.serializers import ItemModelSerializer
+from los_precios.products.serializers import ItemModelSerializer, ViewItemModelSerializer
 
 # Models
 from los_precios.products.models import Item
@@ -35,6 +35,12 @@ class ItemViewSet(mixins.ListModelMixin,
         'is_pack',
         'lp_id',
     )
+
+    def get_serializer_class(self):
+        """Return serializer based on action."""
+        if self.action == 'create':
+            return ItemModelSerializer
+        return ViewItemModelSerializer
 
     def get_permissions(self):
         permissions = [IsAuthenticated]

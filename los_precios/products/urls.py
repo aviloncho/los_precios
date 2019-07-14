@@ -7,10 +7,11 @@ from django.urls import include, path
 from rest_framework.routers import DefaultRouter
 
 # Views
-from los_precios.products.views import items, brands
+from los_precios.products.views import items, brands, measures
 
 router = DefaultRouter()
 router.register(r'brands', brands.BrandViewSet, basename='brands')
+router.register(r'measures', measures.MeasureViewSet, basename='measures')
 router.register(r'items', items.ItemViewSet, basename='items')
 
 

@@ -7,17 +7,6 @@ from rest_framework import serializers
 from los_precios.products.models import Brand
 
 
-class ItemBrandSerializer(serializers.ModelSerializer):
-    """ItemBrand Model Serializer"""
-
-    class Meta:
-        model = Brand
-        fields = (
-            'id',
-            'name',
-        )
-
-
 class BrandModelSerializer(serializers.ModelSerializer):
     """Brand Model Serializer"""
 
@@ -26,6 +15,4 @@ class BrandModelSerializer(serializers.ModelSerializer):
         fields = (
             'id',
             'name',
-            'created',
-            'modified',
         )

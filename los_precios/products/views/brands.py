@@ -3,6 +3,9 @@
 # Django REST Framework
 from rest_framework import mixins, viewsets
 
+# Permissions
+from rest_framework.permissions import IsAuthenticated
+
 # Filters
 from rest_framework.filters import SearchFilter, OrderingFilter
 from django_filters.rest_framework import DjangoFilterBackend
@@ -26,3 +29,8 @@ class BrandViewSet(mixins.ListModelMixin,
     search_fields = ('name',)
     ordering_fields = ('name',)
     filter_fields = ('id', 'name',)
+
+    def get_permissions(self):
+        permissions = [IsAuthenticated]
+
+        return [permission() for permission in permissions]

@@ -1,8 +1,10 @@
-from .brands import ItemBrandSerializer, BrandModelSerializer
-from .items import ItemModelSerializer
+from .brands import BrandModelSerializer
+from .measures import MeasureModelSerializer
+from .items import ItemModelSerializer, ViewItemModelSerializer
 
 __all__ = [
-    ItemBrandSerializer,
     BrandModelSerializer,
+    MeasureModelSerializer,
     ItemModelSerializer,
+    ViewItemModelSerializer,
 ]
