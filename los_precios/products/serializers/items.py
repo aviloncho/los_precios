@@ -5,6 +5,7 @@ from rest_framework import serializers
 
 # Serializers
 from los_precios.products.serializers import BrandModelSerializer, MeasureModelSerializer
+from los_precios.prices.serializers import ItemPriceModelSerializer
 
 # Models
 from los_precios.products.models import Item
@@ -36,6 +37,7 @@ class ViewItemModelSerializer(serializers.ModelSerializer):
     """Item Model Serializer"""
     brand = BrandModelSerializer(read_only=True)
     measure = MeasureModelSerializer(read_only=True)
+    prices = ItemPriceModelSerializer(read_only=True, many=True)
 
     class Meta:
         model = Item
@@ -51,6 +53,7 @@ class ViewItemModelSerializer(serializers.ModelSerializer):
             'pack_quantity',
             'lp_id',
             'lp_url',
+            'prices',
             'created',
             'modified',
         )

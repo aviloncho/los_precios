@@ -18,6 +18,7 @@ class ItemPrice(BaseModel):
     item = models.ForeignKey(
         Item,
         verbose_name=_('item'),
+        related_name='prices',
         on_delete=models.PROTECT,
     )
 
