@@ -23,6 +23,7 @@ urlpatterns = [
     path("rest-auth/facebook/", FacebookLogin.as_view(), name="fb_login"),
     path("rest-auth/google/", GoogleLogin.as_view(), name="go_login"),
     path("products/", include("los_precios.products.urls", namespace="products")),
+    path("prices/", include("los_precios.prices.urls", namespace="prices")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 if settings.DEBUG:
