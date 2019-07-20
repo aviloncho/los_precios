@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load socialaccount %}
 
 {% block title %}User: {{ object.username }}{% endblock %}
 
@@ -13,6 +14,18 @@
       {% if object.name %}
         <p>{{ object.name }}</p>
       {% endif %}
+
+      {% get_social_accounts object as accounts %}
+      {% if accounts %}
+        {% for account in object.socialaccount_set.all %}
+          <a href="{{ account.extra_data.link }}" target="blank" class="{{ account.provider|lower }}">
+            <span class="icon icon-{{ account.provider|lower }}"></span>
+            <span class="text">{{ account.provider|capfirst }}</span>
+          </a>
+        {% endfor %}
+      {% endif %}
+        
+        
     </div>
   </div>
 
@@ -21,9 +34,11 @@
 <div class="row">
 
   <div class="col-sm-12">
-    <a class="btn btn-primary" href="{% url 'users:update' %}" role="button">My Info</a>
+    
+    {% if user.is_staff %}
+      <a class="btn btn-primary" href="{% url 'admin:index' %}" role="button">Go Admin</a>
+    {% endif %}
     <a class="btn btn-primary" href="{% url 'account_email' %}" role="button">E-Mail</a>
-    <!-- Your Stuff: Custom user template urls -->
   </div>
 
 </div>

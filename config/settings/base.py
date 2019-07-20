@@ -285,7 +285,3 @@ ACCOUNT_EMAIL_VERIFICATION = "none"
 ACCOUNT_ADAPTER = "los_precios.users.adapters.AccountAdapter"
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
 SOCIALACCOUNT_ADAPTER = "los_precios.users.adapters.SocialAccountAdapter"
-
-
-# Your stuff...
-# ------------------------------------------------------------------------------
