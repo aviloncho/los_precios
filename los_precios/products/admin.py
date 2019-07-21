@@ -10,6 +10,7 @@ from los_precios.products.forms.items import ItemForm
 # AdminInline
 from los_precios.prices.admin import ItemPriceInLine
 
+
 @admin.register(Brand)
 class BrandAdmin(admin.ModelAdmin):
     """Brand Admin"""
@@ -42,8 +43,9 @@ class ItemAdmin(admin.ModelAdmin):
         'lp_id',
     )
     list_display_links = ('name',)
+    list_filter = ('is_pack', 'measure',)
     ordering = ('name',)
-    search_fields = ('name', 'brand')
+    search_fields = ('name', 'brand__name')
     filter_horizontal = ('pack_unit_items',)
 
-    inlines = [ItemPriceInLine,]
+    inlines = [ItemPriceInLine, ]
