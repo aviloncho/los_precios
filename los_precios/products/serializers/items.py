@@ -33,6 +33,7 @@ class ItemModelSerializer(serializers.ModelSerializer):
             'lp_size',
             'lp_complement',
             'lp_store_id',
+            'lp_store_url',
             'created',
             'modified',
         )
@@ -63,6 +64,7 @@ class ViewItemModelSerializer(serializers.ModelSerializer):
             'lp_size',
             'lp_complement',
             'lp_store_id',
+            'lp_store_url',
             'prices',
             'created',
             'modified',
