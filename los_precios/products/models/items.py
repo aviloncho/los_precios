@@ -81,5 +81,39 @@ class Item(BaseModel):
         null=True,
     )
 
+    lp_product = models.CharField(
+        max_length=300,
+        verbose_name=_('los precios product'),
+        blank=True,
+        null=True,
+    )
+
+    lp_brand = models.CharField(
+        max_length=200,
+        verbose_name=_('los precios brand'),
+        blank=True,
+        null=True,
+    )
+
+    lp_size = models.DecimalField(
+        max_digits=7,
+        decimal_places=2,
+        verbose_name=_('los precios size'),
+        blank=True,
+        null=True,
+    )
+
+    lp_complement = models.TextField(
+        blank=True,
+        null=True,
+        verbose_name=_('los precios complement'),
+    )
+
+    lp_store_id = models.IntegerField(
+        verbose_name=_('los precios store id'),
+        blank=True,
+        null=True,
+    )
+
     def __str__(self):
         return '{} {}{}'.format(self.name, self.quantity, self.measure.abrev)
