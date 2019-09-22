@@ -115,5 +115,11 @@ class Item(BaseModel):
         null=True,
     )
 
+    lp_store_url = models.URLField(
+        verbose_name=_('los precios store URL'),
+        blank=True,
+        null=True,
+    )
+
     def __str__(self):
         return '{} {}{}'.format(self.name, self.quantity, self.measure.abrev)
